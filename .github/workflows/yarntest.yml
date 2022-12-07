@@ -13,7 +13,12 @@ jobs:
         with:
           node-version: 16.x
 
-      - name: Run install
+      - name: Yarn install
         uses: borales/actions-yarn@v4
         with:
           cmd: install # will run `yarn install` command
+          
+      - name: Yarn start
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: start # will run `yarn start` command
