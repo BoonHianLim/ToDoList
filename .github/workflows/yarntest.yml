@@ -18,7 +18,7 @@ jobs:
         with:
           cmd: install # will run `yarn install` command
           
-      - name: Yarn start
+      - name: Yarn test 
         uses: borales/actions-yarn@v4
         with:
-          cmd: start # will run `yarn start` command
+          cmd: test # will run `yarn test` command, use jest to test
